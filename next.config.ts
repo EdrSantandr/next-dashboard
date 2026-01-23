@@ -7,9 +7,16 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "images.unsplash.com"
-      }
+      },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com"
+      },
     ]
-  }
+  },
+  experimental: {
+    globalNotFound: true,
+  },
 };
 
 export default nextConfig;
